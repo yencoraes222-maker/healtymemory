@@ -1,0 +1,480 @@
+/* de groene tekst is zelf getypt voor duidelijke weergave*/
+
+body {
+  font-family: "poppins", sans-serif;
+  background-color: hsl(43, 26%, 95%);
+}
+
+/* info header*/
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  background-color: hsl(34, 38%, 92%);
+  border: 0.1rem solid hsl(0, 0%, 0%);
+
+  z-index: 10;
+  position: relative;
+  height: 5rem;
+}
+
+.logonaam {
+  font-family: "gelato-luxe", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 3rem;
+  color: hsl(109, 18%, 69%);
+  -webkit-text-stroke: 0.08rem #000000;
+  transition: transform 0.3s ease-out;
+}
+
+.logonaam:hover {
+  transform: scale(0.9);
+}
+
+.navigatie-links {
+  display: flex;
+  list-style: none;
+  gap: 6rem;
+}
+
+.navigatie-links a {
+  text-decoration: none;
+  color: hsl(0, 0%, 0%);
+  font-size: 1.25rem;
+}
+.navigatie-links a:hover {
+  color: #a3b18a;
+  font-weight: 800;
+  transition: 1s;
+}
+
+/* info over de hero */
+.hero {
+  position: relative;
+  height: 30rem;
+}
+
+.green-circle {
+  position: absolute;
+
+  top: -15rem;
+  right: 1.95rem;
+
+  width: 40rem;
+  height: 40rem;
+
+  background-color: #a3b18a;
+  border-radius: 50%;
+  border: 0.1rem solid hsl(0, 0%, 0%);
+
+  z-index: -1;
+}
+
+.hero-foto {
+  position: absolute;
+  top: 8rem;
+  right: 4rem;
+  width: 40rem;
+  z-index: 3;
+  filter: drop-shadow(10rem);
+}
+.hero-tekst {
+  position: absolute;
+  top: 4rem;
+  right: 10rem;
+  font-family: "poppins", sans-serif;
+  font-size: 2rem;
+}
+
+/* tekst blokken*/
+
+.info-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 8rem;
+  padding: 6rem 2rem;
+  background-color: hsl(43, 26%, 95%);
+}
+.info-blok {
+  flex: 1;
+  max-width: 40rem;
+}
+
+.info-blok h3 {
+  font-family: "poppins", sans-serif;
+  font-weight: 600;
+  font-size: 1.6rem;
+  margin-bottom: 1.2rem;
+}
+
+.info-blok p {
+  font-family: "poppins", sans-serif;
+  line-height: 1.7rem;
+}
+/* de button */
+
+.button-wrapper {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 5rem;
+}
+.play-game-button {
+  background-color: hsl(93, 15%, 43%);
+  box-shadow: 0.25rem 0.25rem hsl(142, 33%, 49%);
+  color: white;
+  text-decoration: none;
+  padding: 1.5rem 4rem;
+  border-radius: 5rem;
+  font-weight: 600;
+  font-size: 1.25rem;
+}
+.play-game-button:hover {
+  background-color: hsl(110, 40%, 75%);
+  transition: 1s;
+}
+.play-game-button:active {
+  transition: 1s;
+}
+
+/* menu */
+
+.menu-sectie {
+  text-align: center;
+  padding: 4rem 1rem;
+}
+
+.menu-titel {
+  font-family: "gelato-luxe", sans-serif;
+  font-size: 3rem;
+  margin-bottom: 3rem;
+}
+
+.gerechten-grid {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  overflow-x: auto;
+  padding-bottom: 2rem;
+}
+
+.gerecht-kaart {
+  flex: 0 0 auto;
+  width: 15rem;
+}
+
+.menu-vorm {
+  display: flex;
+  width: 14em;
+  height: 20rem;
+  background-color: hsl(43, 36%, 86%);
+  border: 0.3rem solid hsl(82, 20%, 62%);
+  border-radius: 8rem;
+
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  margin-bottom: 1rem;
+}
+
+.menu-vorm img {
+  width: 50rem;
+  height: auto;
+}
+
+.gerecht-kaart p {
+  font-family: "poppins", sans-serif;
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+/* footer */
+.footer {
+  background-color: hsl(82, 20%, 62%);
+  padding: 2rem 5%;
+  border-top: 1px solid hsl(0, 0%, 0%);
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.socials {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.socials img {
+  width: 3rem;
+  height: 3rem;
+  transition: transform 0.3s ease;
+}
+
+.socials img:hover {
+  transform: scale(1.2);
+}
+
+.social-icon {
+  text-decoration: none;
+  color: #000;
+  font-family: "Poppins", sans-serif;
+  font-size: 0.9rem;
+}
+/* kaartjes */
+
+:root {
+  --green-fuel: hsl(108, 18%, 69%);
+  --dark-green: hsl(150, 20%, 25%);
+  --beige-stroke: hsl(38, 50%, 80%);
+  --white: hsl(0, 0%, 100%);
+}
+
+.game-container {
+  max-width: 60rem;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+.game-info {
+  display: flex;
+  justify-content: center;
+  gap: 4rem;
+  background-color: (hsl(0, 0%, 100%));
+  padding: 1.5rem;
+  border-radius: 2rem;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+  margin-bottom: 2rem;
+  border: 2px solid var(--beige-stroke);
+}
+
+.stat-box {
+  font-size: 1.4rem;
+}
+
+.stat-box .label {
+  font-weight: 400;
+  opacity: 0.8;
+}
+
+.stat-box .value {
+  font-weight: 800;
+  margin-left: 0.5rem;
+}
+
+.memory-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+  perspective: 1000px;
+}
+
+.memory-card {
+  height: 22rem;
+  cursor: pointer;
+  position: relative;
+}
+
+.card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+  transform-style: preserve-3d;
+}
+
+.memory-card.flip .card-inner {
+  transform: rotateY(180deg);
+}
+
+.card-front,
+.card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  border-radius: 3rem;
+  border: 0.4rem solid var(--beige-stroke);
+  box-shadow: 0 5px 10px hsla(0, 0%, 0%, 0.1);
+}
+
+.card-back {
+  background-color: var(--green-fuel);
+}
+
+.card-front {
+  background-color: var(--white);
+  transform: rotateY(180deg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.card-front img {
+  width: 85%;
+  height: auto;
+  object-fit: contain;
+}
+
+.controls {
+  text-align: center;
+  margin-top: 3rem;
+}
+
+#reset-btn {
+  background-color: var(--dark-green);
+  color: var(--white);
+  border: none;
+  padding: 1.2rem 3rem;
+  font-size: 1.1rem;
+  font-weight: bold;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 10px hsla(0, 0%, 0%, 0.2);
+}
+
+#reset-btn:hover {
+  background-color: var(--green-fuel);
+  transform: translateY(-3px);
+  box-shadow: 0 6px 15px hsla(0, 0%, 0%, 0.3);
+}
+
+#reset-btn:active {
+  transform: translateY(-1px);
+}
+
+/* media queries voor telefoon */
+
+@media screen and (max-width: 64rem) {
+  .hero-foto {
+    width: 30rem;
+    right: 2rem;
+  }
+
+  .green-circle {
+    width: 30rem;
+    height: 30rem;
+    top: -10rem;
+  }
+
+  .info-container {
+    gap: 3rem;
+  }
+}
+
+@media screen and (max-width: 48rem) {
+  .header {
+    height: auto;
+    flex-direction: column;
+    padding: 1.5rem;
+    gap: 1rem;
+  }
+
+  .navigatie-links {
+    gap: 2rem;
+  }
+
+  .logonaam {
+    font-size: 2.5rem;
+  }
+
+  .hero {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 2rem;
+  }
+
+  .hero-tekst {
+    position: static;
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+
+  .hero-foto {
+    position: static;
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .green-circle {
+    display: none;
+  }
+
+  .info-container {
+    flex-direction: column;
+    align-items: center;
+    padding: 3rem 1.5rem;
+  }
+
+  .info-blok {
+    text-align: center;
+    max-width: 100%;
+  }
+
+  .gerechten-grid {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .footer-content {
+    flex-direction: column;
+    gap: 2rem;
+    text-align: center;
+  }
+  @media screen and (max-width: 48rem) {
+    .floating-item {
+      display: none;
+    }
+  }
+}
+
+/* media queries kaartjes*/
+
+@media screen and (max-width: 768px) {
+  .game-container {
+    max-width: 95%;
+  }
+
+  .memory-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+
+  .memory-card {
+    height: 18rem;
+  }
+
+  .game-info {
+    gap: 1.5rem;
+    font-size: 1.1rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .memory-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.8rem;
+  }
+
+  .memory-card {
+    height: 14rem;
+    border-radius: 2rem;
+  }
+
+  .card-front img {
+    width: 80%;
+  }
+
+  #reset-btn {
+    width: 100%;
+    padding: 1rem;
+  }
+}
